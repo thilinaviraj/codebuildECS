@@ -22,5 +22,5 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - docker push $REPOSITORY_URI:latest
+      - docker push 151803697644.dkr.ecr.us-east-2.amazonaws.com/base-image:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
